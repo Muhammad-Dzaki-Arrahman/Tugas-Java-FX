@@ -82,7 +82,7 @@ public class RegisterJavaFX extends Application {
         FieldHolder.setLayoutY(30);
 
         Scene scene = new Scene(Group, 350, 300);
-        scene.setFill(Color.GREY);
+        scene.setFill(Color.GREEN);
 
         primaryStage.setTitle("Register");
         primaryStage.setScene(scene);
