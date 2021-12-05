@@ -3,7 +3,6 @@ Muhammad Dzaki Arrahman
 C - PBO
 Tugas Java FX
 
-
 package tugasjavafx;
 
 import javafx.application.Application;
@@ -64,22 +63,33 @@ public class RegisterJavaFX extends Application {
         HBBName.setSpacing(51);
 
         HBEmail.getChildren().addAll(LEmail, Email);
-        HBEmail.setSpacing(29);
+        HBEmail.setSpacing(50);
 
         HBContact.getChildren().addAll(LContact, Contact);
-        HBContact.setSpacing(49);
+        HBContact.setSpacing(51);
 
         HBPass1.getChildren().addAll(LPass1, Pass1);
-        HBPass1.setSpacing(59);
+        HBPass1.setSpacing(50);
 
         HBPass2.getChildren().addAll(LPass2, Pass2);
-        HBPass2.setSpacing(14);
+        HBPass2.setSpacing(40);
 
         FieldHolder.getChildren().addAll(HBFName, HBBName, HBEmail, HBContact, HBPass1, HBPass2);
         FieldHolder.setSpacing(10);
 
-        FieldHolder.setLayoutX(30);
-        FieldHolder.setLayoutY(30);
+        FieldHolder.setLayoutX(50);
+        FieldHolder.setLayoutY(50);
+
+        Group Group = new Group();
+        TilePane tp_Panel2 = new TilePane();
+
+        tp_Panel2.getChildren().addAll(BTN);
+        BTN.setStyle("-fx-background-color: #ffffff; ");
+
+        tp_Panel2.setLayoutX(150);
+        tp_Panel2.setLayoutY(250);
+
+        Group.getChildren().addAll(FieldHolder, tp_Panel2); 
 
         Scene scene = new Scene(Group, 350, 300);
         scene.setFill(Color.GREEN);
@@ -93,3 +103,4 @@ public class RegisterJavaFX extends Application {
     }
     
 }
+
